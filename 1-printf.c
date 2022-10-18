@@ -8,7 +8,7 @@ int _printf(const char *format, ...)
 {
 	int p_chars;
 
-	_cvrt f_list[] ={
+	_cvrt f_list[] = {
 		{"c", p_char},
 		{"s", p_str},
 		{"%", p_percent},
@@ -16,11 +16,10 @@ int _printf(const char *format, ...)
 		{"i", p_int},
 
 		{NULL, NULL}
-
 	};
 	va_list arg_list;
 
-	if(format == NULL)
+	if (format == NULL)
 		return (-1);
 	va_start(arg_list, format);
 	p_chars = parser(format, f_list, arg_list);
