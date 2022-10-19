@@ -14,6 +14,13 @@ int _printf(const char *format, ...)
 		{"%", p_percent},
 		{"d", p_int},
 		{"i", p_int},
+		{"r", p_str_rev},
+		{"R", rot13},
+		{"b", p_binary},
+		{"u", unsigned_int},
+		{"o", p_octal},
+		{"x", p_hex},
+		{"X", p_heX},
 
 		{NULL, NULL}
 	};
